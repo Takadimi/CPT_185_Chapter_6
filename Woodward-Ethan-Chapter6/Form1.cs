@@ -51,5 +51,51 @@ namespace Woodward_Ethan_Chapter6
             txtbxTax.Clear();
             txtbxTotal.Clear();
         }
+
+        private void ClearAll()
+        {
+            ClearOilLub();
+            ClearFlushes();
+            ClearMisc();
+            ClearOther();
+            ClearFees();
+
+            chkbxOilChange.Focus();
+        }
+
+        private void Calculate()
+        {
+
+        }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(shop.OilLubCharges(chkbxOilChange.Checked, chkbxLubeJob.Checked).ToString());
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            ClearAll();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void calculateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(shop.OilLubCharges(chkbxOilChange.Checked, chkbxLubeJob.Checked).ToString());
+        }
+
+        private void clearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClearAll();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -1,1 +1,9 @@
 C:\Users\Ethan\Dropbox\School\CPT185\Woodward-Ethan-Chapter6\Woodward-Ethan-Chapter6\bin\Debug\Woodward-Ethan-Chapter5.exe.config
+C:\Users\Ethan\Dropbox\School\CPT185\Woodward-Ethan-Chapter6\Woodward-Ethan-Chapter6\bin\Debug\Woodward-Ethan-Chapter5.exe
+C:\Users\Ethan\Dropbox\School\CPT185\Woodward-Ethan-Chapter6\Woodward-Ethan-Chapter6\bin\Debug\Woodward-Ethan-Chapter5.pdb
+C:\Users\Ethan\Dropbox\School\CPT185\Woodward-Ethan-Chapter6\Woodward-Ethan-Chapter6\obj\Debug\Woodward-Ethan-Chapter6.csprojResolveAssemblyReference.cache
+C:\Users\Ethan\Dropbox\School\CPT185\Woodward-Ethan-Chapter6\Woodward-Ethan-Chapter6\obj\Debug\Woodward_Ethan_Chapter6.Form1.resources
+C:\Users\Ethan\Dropbox\School\CPT185\Woodward-Ethan-Chapter6\Woodward-Ethan-Chapter6\obj\Debug\Woodward_Ethan_Chapter6.Properties.Resources.resources
+C:\Users\Ethan\Dropbox\School\CPT185\Woodward-Ethan-Chapter6\Woodward-Ethan-Chapter6\obj\Debug\Woodward-Ethan-Chapter6.csproj.GenerateResource.Cache
+C:\Users\Ethan\Dropbox\School\CPT185\Woodward-Ethan-Chapter6\Woodward-Ethan-Chapter6\obj\Debug\Woodward-Ethan-Chapter5.exe
+C:\Users\Ethan\Dropbox\School\CPT185\Woodward-Ethan-Chapter6\Woodward-Ethan-Chapter6\obj\Debug\Woodward-Ethan-Chapter5.pdb

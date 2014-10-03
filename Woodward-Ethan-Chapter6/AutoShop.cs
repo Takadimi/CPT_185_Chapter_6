@@ -8,6 +8,7 @@ namespace Woodward_Ethan_Chapter6
 {
     class AutoShop
     {
+        /*** Private Class Variables ***/
         private const double oilChangeCost      = 26.00;
         private const double lubeJobCost        = 18.00;
         private const double radFlushCost       = 30.00;
@@ -16,8 +17,13 @@ namespace Woodward_Ethan_Chapter6
         private const double replaceMufflerCost = 100.00;
         private const double tireRotCost        = 20.00;
 
-        private double partsCost = 0.0;
-        private double laborCost = 0.0;
+        private double partsCost                = 0.0;
+        private double laborCost                = 0.0;
+
+        private double serviceAndLaborTotal     = 0.0;
+        private double partsTotal               = 0.0;
+        private double taxTotal                 = 0.0;
+        private double total                    = 0.0;
 
         public double OilLubCharges(bool isOilChangeChecked, bool isLubeJobChecked)
         {
@@ -25,9 +31,6 @@ namespace Woodward_Ethan_Chapter6
 
             charges += isOilChangeChecked ? oilChangeCost : 0.0;
             charges += isLubeJobChecked ? lubeJobCost : 0.0;
-
-            //if (isOilChangeChecked) { charges += oilChangeCost; }
-            //if (isLubeJobChecked) { charges += lubeJobCost; }
 
             return charges;
         }
