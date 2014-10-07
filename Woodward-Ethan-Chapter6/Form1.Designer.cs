@@ -30,32 +30,32 @@
         {
             this.components = new System.ComponentModel.Container();
             this.grpbxOilAndLube = new System.Windows.Forms.GroupBox();
-            this.grpbxFlushes = new System.Windows.Forms.GroupBox();
-            this.grpbxMisc = new System.Windows.Forms.GroupBox();
-            this.grpbxPartsAndLabor = new System.Windows.Forms.GroupBox();
-            this.grpbxSummary = new System.Windows.Forms.GroupBox();
-            this.chkbxOilChange = new System.Windows.Forms.CheckBox();
             this.chkbxLubeJob = new System.Windows.Forms.CheckBox();
-            this.chkbxInspection = new System.Windows.Forms.CheckBox();
-            this.chkbxReplaceMuffler = new System.Windows.Forms.CheckBox();
-            this.chkbxTireRot = new System.Windows.Forms.CheckBox();
-            this.chkbxRadFlush = new System.Windows.Forms.CheckBox();
+            this.chkbxOilChange = new System.Windows.Forms.CheckBox();
+            this.grpbxFlushes = new System.Windows.Forms.GroupBox();
             this.chkbxTransFlush = new System.Windows.Forms.CheckBox();
-            this.txtbxParts = new System.Windows.Forms.TextBox();
+            this.chkbxRadFlush = new System.Windows.Forms.CheckBox();
+            this.grpbxMisc = new System.Windows.Forms.GroupBox();
+            this.chkbxTireRot = new System.Windows.Forms.CheckBox();
+            this.chkbxReplaceMuffler = new System.Windows.Forms.CheckBox();
+            this.chkbxInspection = new System.Windows.Forms.CheckBox();
+            this.grpbxPartsAndLabor = new System.Windows.Forms.GroupBox();
+            this.lblLabor = new System.Windows.Forms.Label();
+            this.lblParts = new System.Windows.Forms.Label();
             this.txtbxLabor = new System.Windows.Forms.TextBox();
+            this.txtbxParts = new System.Windows.Forms.TextBox();
+            this.grpbxSummary = new System.Windows.Forms.GroupBox();
+            this.lblTotalFees = new System.Windows.Forms.Label();
+            this.lblTax = new System.Windows.Forms.Label();
+            this.lblPartsSummary = new System.Windows.Forms.Label();
+            this.lblServicesAndLabor = new System.Windows.Forms.Label();
+            this.txtbxTotal = new System.Windows.Forms.TextBox();
+            this.txtbxTax = new System.Windows.Forms.TextBox();
+            this.txtbxPartsSummary = new System.Windows.Forms.TextBox();
+            this.txtbxServicesAndLabor = new System.Windows.Forms.TextBox();
             this.btnCalc = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.txtbxServicesAndLabor = new System.Windows.Forms.TextBox();
-            this.txtbxPartsSummary = new System.Windows.Forms.TextBox();
-            this.txtbxTax = new System.Windows.Forms.TextBox();
-            this.txtbxTotal = new System.Windows.Forms.TextBox();
-            this.lblParts = new System.Windows.Forms.Label();
-            this.lblLabor = new System.Windows.Forms.Label();
-            this.lblServicesAndLabor = new System.Windows.Forms.Label();
-            this.lblPartsSummary = new System.Windows.Forms.Label();
-            this.lblTax = new System.Windows.Forms.Label();
-            this.lblTotalFees = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,6 +81,26 @@
             this.grpbxOilAndLube.TabStop = false;
             this.grpbxOilAndLube.Text = "Oil && Lube";
             // 
+            // chkbxLubeJob
+            // 
+            this.chkbxLubeJob.AutoSize = true;
+            this.chkbxLubeJob.Location = new System.Drawing.Point(11, 69);
+            this.chkbxLubeJob.Name = "chkbxLubeJob";
+            this.chkbxLubeJob.Size = new System.Drawing.Size(149, 20);
+            this.chkbxLubeJob.TabIndex = 1;
+            this.chkbxLubeJob.Text = "Lube Job ($18.00)";
+            this.chkbxLubeJob.UseVisualStyleBackColor = true;
+            // 
+            // chkbxOilChange
+            // 
+            this.chkbxOilChange.AutoSize = true;
+            this.chkbxOilChange.Location = new System.Drawing.Point(11, 31);
+            this.chkbxOilChange.Name = "chkbxOilChange";
+            this.chkbxOilChange.Size = new System.Drawing.Size(161, 20);
+            this.chkbxOilChange.TabIndex = 0;
+            this.chkbxOilChange.Text = "Oil Change ($26.00)";
+            this.chkbxOilChange.UseVisualStyleBackColor = true;
+            // 
             // grpbxFlushes
             // 
             this.grpbxFlushes.Controls.Add(this.chkbxTransFlush);
@@ -91,6 +111,26 @@
             this.grpbxFlushes.TabIndex = 2;
             this.grpbxFlushes.TabStop = false;
             this.grpbxFlushes.Text = "Flushes";
+            // 
+            // chkbxTransFlush
+            // 
+            this.chkbxTransFlush.AutoSize = true;
+            this.chkbxTransFlush.Location = new System.Drawing.Point(16, 69);
+            this.chkbxTransFlush.Name = "chkbxTransFlush";
+            this.chkbxTransFlush.Size = new System.Drawing.Size(219, 20);
+            this.chkbxTransFlush.TabIndex = 1;
+            this.chkbxTransFlush.Text = "Transmission Flush ($80.00)";
+            this.chkbxTransFlush.UseVisualStyleBackColor = true;
+            // 
+            // chkbxRadFlush
+            // 
+            this.chkbxRadFlush.AutoSize = true;
+            this.chkbxRadFlush.Location = new System.Drawing.Point(16, 31);
+            this.chkbxRadFlush.Name = "chkbxRadFlush";
+            this.chkbxRadFlush.Size = new System.Drawing.Size(186, 20);
+            this.chkbxRadFlush.TabIndex = 0;
+            this.chkbxRadFlush.Text = "Radiator Flush ($30.00)";
+            this.chkbxRadFlush.UseVisualStyleBackColor = true;
             // 
             // grpbxMisc
             // 
@@ -104,6 +144,36 @@
             this.grpbxMisc.TabStop = false;
             this.grpbxMisc.Text = "Misc";
             // 
+            // chkbxTireRot
+            // 
+            this.chkbxTireRot.AutoSize = true;
+            this.chkbxTireRot.Location = new System.Drawing.Point(11, 133);
+            this.chkbxTireRot.Name = "chkbxTireRot";
+            this.chkbxTireRot.Size = new System.Drawing.Size(175, 20);
+            this.chkbxTireRot.TabIndex = 2;
+            this.chkbxTireRot.Text = "Tire Rotation ($20.00)";
+            this.chkbxTireRot.UseVisualStyleBackColor = true;
+            // 
+            // chkbxReplaceMuffler
+            // 
+            this.chkbxReplaceMuffler.AutoSize = true;
+            this.chkbxReplaceMuffler.Location = new System.Drawing.Point(11, 90);
+            this.chkbxReplaceMuffler.Name = "chkbxReplaceMuffler";
+            this.chkbxReplaceMuffler.Size = new System.Drawing.Size(202, 20);
+            this.chkbxReplaceMuffler.TabIndex = 1;
+            this.chkbxReplaceMuffler.Text = "Replace Muffler ($100.00)";
+            this.chkbxReplaceMuffler.UseVisualStyleBackColor = true;
+            // 
+            // chkbxInspection
+            // 
+            this.chkbxInspection.AutoSize = true;
+            this.chkbxInspection.Location = new System.Drawing.Point(11, 46);
+            this.chkbxInspection.Name = "chkbxInspection";
+            this.chkbxInspection.Size = new System.Drawing.Size(156, 20);
+            this.chkbxInspection.TabIndex = 0;
+            this.chkbxInspection.Text = "Inspection ($15.00)";
+            this.chkbxInspection.UseVisualStyleBackColor = true;
+            // 
             // grpbxPartsAndLabor
             // 
             this.grpbxPartsAndLabor.Controls.Add(this.lblLabor);
@@ -116,6 +186,40 @@
             this.grpbxPartsAndLabor.TabIndex = 3;
             this.grpbxPartsAndLabor.TabStop = false;
             this.grpbxPartsAndLabor.Text = "Parts && Labor";
+            // 
+            // lblLabor
+            // 
+            this.lblLabor.AutoSize = true;
+            this.lblLabor.Location = new System.Drawing.Point(29, 118);
+            this.lblLabor.Name = "lblLabor";
+            this.lblLabor.Size = new System.Drawing.Size(70, 16);
+            this.lblLabor.TabIndex = 3;
+            this.lblLabor.Text = "Labor ($)";
+            // 
+            // lblParts
+            // 
+            this.lblParts.AutoSize = true;
+            this.lblParts.Location = new System.Drawing.Point(55, 47);
+            this.lblParts.Name = "lblParts";
+            this.lblParts.Size = new System.Drawing.Size(44, 16);
+            this.lblParts.TabIndex = 2;
+            this.lblParts.Text = "Parts";
+            // 
+            // txtbxLabor
+            // 
+            this.txtbxLabor.Location = new System.Drawing.Point(105, 115);
+            this.txtbxLabor.Name = "txtbxLabor";
+            this.txtbxLabor.Size = new System.Drawing.Size(73, 22);
+            this.txtbxLabor.TabIndex = 1;
+            this.txtbxLabor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtbxParts
+            // 
+            this.txtbxParts.Location = new System.Drawing.Point(105, 46);
+            this.txtbxParts.Name = "txtbxParts";
+            this.txtbxParts.Size = new System.Drawing.Size(73, 22);
+            this.txtbxParts.TabIndex = 0;
+            this.txtbxParts.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // grpbxSummary
             // 
@@ -134,89 +238,77 @@
             this.grpbxSummary.TabStop = false;
             this.grpbxSummary.Text = "Summary";
             // 
-            // chkbxOilChange
+            // lblTotalFees
             // 
-            this.chkbxOilChange.AutoSize = true;
-            this.chkbxOilChange.Location = new System.Drawing.Point(11, 31);
-            this.chkbxOilChange.Name = "chkbxOilChange";
-            this.chkbxOilChange.Size = new System.Drawing.Size(161, 20);
-            this.chkbxOilChange.TabIndex = 0;
-            this.chkbxOilChange.Text = "Oil Change ($26.00)";
-            this.chkbxOilChange.UseVisualStyleBackColor = true;
+            this.lblTotalFees.AutoSize = true;
+            this.lblTotalFees.Location = new System.Drawing.Point(66, 153);
+            this.lblTotalFees.Name = "lblTotalFees";
+            this.lblTotalFees.Size = new System.Drawing.Size(83, 16);
+            this.lblTotalFees.TabIndex = 8;
+            this.lblTotalFees.Text = "Total Fees";
             // 
-            // chkbxLubeJob
+            // lblTax
             // 
-            this.chkbxLubeJob.AutoSize = true;
-            this.chkbxLubeJob.Location = new System.Drawing.Point(11, 69);
-            this.chkbxLubeJob.Name = "chkbxLubeJob";
-            this.chkbxLubeJob.Size = new System.Drawing.Size(149, 20);
-            this.chkbxLubeJob.TabIndex = 1;
-            this.chkbxLubeJob.Text = "Lube Job ($18.00)";
-            this.chkbxLubeJob.UseVisualStyleBackColor = true;
+            this.lblTax.AutoSize = true;
+            this.lblTax.Location = new System.Drawing.Point(45, 111);
+            this.lblTax.Name = "lblTax";
+            this.lblTax.Size = new System.Drawing.Size(104, 16);
+            this.lblTax.TabIndex = 7;
+            this.lblTax.Text = "Tax (on parts)";
             // 
-            // chkbxInspection
+            // lblPartsSummary
             // 
-            this.chkbxInspection.AutoSize = true;
-            this.chkbxInspection.Location = new System.Drawing.Point(11, 46);
-            this.chkbxInspection.Name = "chkbxInspection";
-            this.chkbxInspection.Size = new System.Drawing.Size(156, 20);
-            this.chkbxInspection.TabIndex = 0;
-            this.chkbxInspection.Text = "Inspection ($15.00)";
-            this.chkbxInspection.UseVisualStyleBackColor = true;
+            this.lblPartsSummary.AutoSize = true;
+            this.lblPartsSummary.Location = new System.Drawing.Point(105, 71);
+            this.lblPartsSummary.Name = "lblPartsSummary";
+            this.lblPartsSummary.Size = new System.Drawing.Size(44, 16);
+            this.lblPartsSummary.TabIndex = 6;
+            this.lblPartsSummary.Text = "Parts";
             // 
-            // chkbxReplaceMuffler
+            // lblServicesAndLabor
             // 
-            this.chkbxReplaceMuffler.AutoSize = true;
-            this.chkbxReplaceMuffler.Location = new System.Drawing.Point(11, 90);
-            this.chkbxReplaceMuffler.Name = "chkbxReplaceMuffler";
-            this.chkbxReplaceMuffler.Size = new System.Drawing.Size(202, 20);
-            this.chkbxReplaceMuffler.TabIndex = 1;
-            this.chkbxReplaceMuffler.Text = "Replace Muffler ($100.00)";
-            this.chkbxReplaceMuffler.UseVisualStyleBackColor = true;
+            this.lblServicesAndLabor.AutoSize = true;
+            this.lblServicesAndLabor.Location = new System.Drawing.Point(22, 27);
+            this.lblServicesAndLabor.Name = "lblServicesAndLabor";
+            this.lblServicesAndLabor.Size = new System.Drawing.Size(127, 16);
+            this.lblServicesAndLabor.TabIndex = 4;
+            this.lblServicesAndLabor.Text = "Services && Labor";
             // 
-            // chkbxTireRot
+            // txtbxTotal
             // 
-            this.chkbxTireRot.AutoSize = true;
-            this.chkbxTireRot.Location = new System.Drawing.Point(11, 133);
-            this.chkbxTireRot.Name = "chkbxTireRot";
-            this.chkbxTireRot.Size = new System.Drawing.Size(175, 20);
-            this.chkbxTireRot.TabIndex = 2;
-            this.chkbxTireRot.Text = "Tire Rotation ($20.00)";
-            this.chkbxTireRot.UseVisualStyleBackColor = true;
+            this.txtbxTotal.Enabled = false;
+            this.txtbxTotal.Location = new System.Drawing.Point(173, 150);
+            this.txtbxTotal.Name = "txtbxTotal";
+            this.txtbxTotal.Size = new System.Drawing.Size(100, 22);
+            this.txtbxTotal.TabIndex = 3;
+            this.txtbxTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // chkbxRadFlush
+            // txtbxTax
             // 
-            this.chkbxRadFlush.AutoSize = true;
-            this.chkbxRadFlush.Location = new System.Drawing.Point(16, 31);
-            this.chkbxRadFlush.Name = "chkbxRadFlush";
-            this.chkbxRadFlush.Size = new System.Drawing.Size(186, 20);
-            this.chkbxRadFlush.TabIndex = 0;
-            this.chkbxRadFlush.Text = "Radiator Flush ($30.00)";
-            this.chkbxRadFlush.UseVisualStyleBackColor = true;
+            this.txtbxTax.Enabled = false;
+            this.txtbxTax.Location = new System.Drawing.Point(173, 108);
+            this.txtbxTax.Name = "txtbxTax";
+            this.txtbxTax.Size = new System.Drawing.Size(100, 22);
+            this.txtbxTax.TabIndex = 2;
+            this.txtbxTax.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // chkbxTransFlush
+            // txtbxPartsSummary
             // 
-            this.chkbxTransFlush.AutoSize = true;
-            this.chkbxTransFlush.Location = new System.Drawing.Point(16, 69);
-            this.chkbxTransFlush.Name = "chkbxTransFlush";
-            this.chkbxTransFlush.Size = new System.Drawing.Size(219, 20);
-            this.chkbxTransFlush.TabIndex = 1;
-            this.chkbxTransFlush.Text = "Transmission Flush ($80.00)";
-            this.chkbxTransFlush.UseVisualStyleBackColor = true;
+            this.txtbxPartsSummary.Enabled = false;
+            this.txtbxPartsSummary.Location = new System.Drawing.Point(173, 68);
+            this.txtbxPartsSummary.Name = "txtbxPartsSummary";
+            this.txtbxPartsSummary.Size = new System.Drawing.Size(100, 22);
+            this.txtbxPartsSummary.TabIndex = 1;
+            this.txtbxPartsSummary.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtbxParts
+            // txtbxServicesAndLabor
             // 
-            this.txtbxParts.Location = new System.Drawing.Point(105, 46);
-            this.txtbxParts.Name = "txtbxParts";
-            this.txtbxParts.Size = new System.Drawing.Size(100, 22);
-            this.txtbxParts.TabIndex = 0;
-            // 
-            // txtbxLabor
-            // 
-            this.txtbxLabor.Location = new System.Drawing.Point(105, 115);
-            this.txtbxLabor.Name = "txtbxLabor";
-            this.txtbxLabor.Size = new System.Drawing.Size(100, 22);
-            this.txtbxLabor.TabIndex = 1;
+            this.txtbxServicesAndLabor.Enabled = false;
+            this.txtbxServicesAndLabor.Location = new System.Drawing.Point(173, 24);
+            this.txtbxServicesAndLabor.Name = "txtbxServicesAndLabor";
+            this.txtbxServicesAndLabor.Size = new System.Drawing.Size(100, 22);
+            this.txtbxServicesAndLabor.TabIndex = 0;
+            this.txtbxServicesAndLabor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnCalc
             // 
@@ -252,94 +344,9 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // txtbxServicesAndLabor
-            // 
-            this.txtbxServicesAndLabor.Enabled = false;
-            this.txtbxServicesAndLabor.Location = new System.Drawing.Point(173, 24);
-            this.txtbxServicesAndLabor.Name = "txtbxServicesAndLabor";
-            this.txtbxServicesAndLabor.Size = new System.Drawing.Size(100, 22);
-            this.txtbxServicesAndLabor.TabIndex = 0;
-            // 
-            // txtbxPartsSummary
-            // 
-            this.txtbxPartsSummary.Enabled = false;
-            this.txtbxPartsSummary.Location = new System.Drawing.Point(173, 68);
-            this.txtbxPartsSummary.Name = "txtbxPartsSummary";
-            this.txtbxPartsSummary.Size = new System.Drawing.Size(100, 22);
-            this.txtbxPartsSummary.TabIndex = 1;
-            // 
-            // txtbxTax
-            // 
-            this.txtbxTax.Enabled = false;
-            this.txtbxTax.Location = new System.Drawing.Point(173, 108);
-            this.txtbxTax.Name = "txtbxTax";
-            this.txtbxTax.Size = new System.Drawing.Size(100, 22);
-            this.txtbxTax.TabIndex = 2;
-            // 
-            // txtbxTotal
-            // 
-            this.txtbxTotal.Enabled = false;
-            this.txtbxTotal.Location = new System.Drawing.Point(173, 150);
-            this.txtbxTotal.Name = "txtbxTotal";
-            this.txtbxTotal.Size = new System.Drawing.Size(100, 22);
-            this.txtbxTotal.TabIndex = 3;
-            // 
-            // lblParts
-            // 
-            this.lblParts.AutoSize = true;
-            this.lblParts.Location = new System.Drawing.Point(55, 47);
-            this.lblParts.Name = "lblParts";
-            this.lblParts.Size = new System.Drawing.Size(44, 16);
-            this.lblParts.TabIndex = 2;
-            this.lblParts.Text = "Parts";
-            // 
-            // lblLabor
-            // 
-            this.lblLabor.AutoSize = true;
-            this.lblLabor.Location = new System.Drawing.Point(29, 118);
-            this.lblLabor.Name = "lblLabor";
-            this.lblLabor.Size = new System.Drawing.Size(70, 16);
-            this.lblLabor.TabIndex = 3;
-            this.lblLabor.Text = "Labor ($)";
-            // 
-            // lblServicesAndLabor
-            // 
-            this.lblServicesAndLabor.AutoSize = true;
-            this.lblServicesAndLabor.Location = new System.Drawing.Point(22, 27);
-            this.lblServicesAndLabor.Name = "lblServicesAndLabor";
-            this.lblServicesAndLabor.Size = new System.Drawing.Size(127, 16);
-            this.lblServicesAndLabor.TabIndex = 4;
-            this.lblServicesAndLabor.Text = "Services && Labor";
-            // 
-            // lblPartsSummary
-            // 
-            this.lblPartsSummary.AutoSize = true;
-            this.lblPartsSummary.Location = new System.Drawing.Point(105, 71);
-            this.lblPartsSummary.Name = "lblPartsSummary";
-            this.lblPartsSummary.Size = new System.Drawing.Size(44, 16);
-            this.lblPartsSummary.TabIndex = 6;
-            this.lblPartsSummary.Text = "Parts";
-            // 
-            // lblTax
-            // 
-            this.lblTax.AutoSize = true;
-            this.lblTax.Location = new System.Drawing.Point(45, 111);
-            this.lblTax.Name = "lblTax";
-            this.lblTax.Size = new System.Drawing.Size(104, 16);
-            this.lblTax.TabIndex = 7;
-            this.lblTax.Text = "Tax (on parts)";
-            // 
-            // lblTotalFees
-            // 
-            this.lblTotalFees.AutoSize = true;
-            this.lblTotalFees.Location = new System.Drawing.Point(66, 153);
-            this.lblTotalFees.Name = "lblTotalFees";
-            this.lblTotalFees.Size = new System.Drawing.Size(83, 16);
-            this.lblTotalFees.TabIndex = 8;
-            this.lblTotalFees.Text = "Total Fees";
-            // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.SeaGreen;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -356,10 +363,11 @@
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Text = "&File";
             // 
             // calculateToolStripMenuItem
             // 
+            this.calculateToolStripMenuItem.BackColor = System.Drawing.Color.ForestGreen;
             this.calculateToolStripMenuItem.Name = "calculateToolStripMenuItem";
             this.calculateToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.calculateToolStripMenuItem.Text = "Calculate";
@@ -367,6 +375,7 @@
             // 
             // clearToolStripMenuItem
             // 
+            this.clearToolStripMenuItem.BackColor = System.Drawing.Color.ForestGreen;
             this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
             this.clearToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clearToolStripMenuItem.Text = "Clear";
@@ -374,6 +383,7 @@
             // 
             // exitToolStripMenuItem
             // 
+            this.exitToolStripMenuItem.BackColor = System.Drawing.Color.ForestGreen;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
@@ -401,7 +411,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Automotive";
+            this.Text = "Joe\'s Automotive Shop";
             this.grpbxOilAndLube.ResumeLayout(false);
             this.grpbxOilAndLube.PerformLayout();
             this.grpbxFlushes.ResumeLayout(false);
